@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sms</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sevgi_sherlari">Sevgi sherlari</string>
+    <string name="men_uchun_ham_o_zingni_asra">Men uchun ham o\'zingni asra</string>
+    <string name="kamtar_bo_l_kamtar_bo_l_kamtar_bo_l_inson_bilib_yo_q_topmoqdan_yoqotmoq_oson_hech_qachon_berilma_kibr_u_havoga">Kamtar bo’l kamtar bo’l kamtar bo’l inson, Bilib yo’q topmoqdan yoqotmoq oson, Hech qachon berilma kibr-u havoga</string>
+</resources>

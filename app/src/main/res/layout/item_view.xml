@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sherCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="4dp"
+        app:cardCornerRadius="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/sherHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/men_uchun_ham_o_zingni_asra"
+            android:textStyle="bold"
+            android:layout_marginStart="18dp"
+            android:padding="2dp"
+            android:layout_marginTop="22dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/sher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:layout_marginTop="54dp"
+            android:text="@string/kamtar_bo_l_kamtar_bo_l_kamtar_bo_l_inson_bilib_yo_q_topmoqdan_yoqotmoq_oson_hech_qachon_berilma_kibr_u_havoga"
+            android:padding="4dp"
+            android:textSize="14sp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginStart="18dp" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

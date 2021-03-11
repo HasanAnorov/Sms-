@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.MainFragment">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS \nSHERLAR"
+        android:textSize="40sp"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yangilar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginTop="14dp"
+        android:elevation="10dp"
+        app:layout_constraintHeight_percent="0.19"
+        app:layout_constraintWidth_percent="0.43"
+        android:backgroundTint="#FCBA03" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/stack"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yangilar"
+            android:textSize="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"
+            android:textColor="#A3000000"/>
+
+        <TextView
+            android:id="@+id/numberOfNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="132"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/saqlanganlar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="16dp"
+        android:layout_marginTop="14dp"
+        android:elevation="10dp"
+        app:layout_constraintHeight_percent="0.19"
+        app:layout_constraintWidth_percent="0.43"
+        android:backgroundTint="#EB1656" >
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/heart"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saqlanganlar"
+            android:textSize="16dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_marginStart="12dp"/>
+
+        <TextView
+            android:id="@+id/numberOfBookmarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="@id/saqlanganlar"
+        app:layout_constraintTop_toBottomOf="@id/saqlanganlar"
+        app:layout_constraintStart_toStartOf="@id/saqlanganlar"
+        android:layout_marginStart="20dp"
+        android:text="LIKE"
+        android:textColor="@color/white"
+        android:background="@drawable/back"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sevgi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/yangilar"
+        app:layout_constraintEnd_toEndOf="@id/yangilar"
+        app:layout_constraintBottom_toTopOf="@id/tabrik"
+        app:cardCornerRadius="12dp"
+        android:elevation="10dp"
+        app:layout_constraintWidth_percent="0.38"
+        app:layout_constraintHeight_percent="0.13"
+        android:layout_marginStart="16dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/love"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sevgi sherlari"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="6dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tabrik"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/sevgi"
+        app:layout_constraintEnd_toEndOf="@id/yangilar"
+        app:layout_constraintBottom_toTopOf="@id/dustlik"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintWidth_percent="0.38"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_marginStart="16dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/fireworks"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tabrik sherlari"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="6dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dustlik"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tabrik"
+        app:layout_constraintEnd_toEndOf="@id/yangilar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintWidth_percent="0.38"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_marginStart="16dp">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/friendship"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do'stlik sherlari"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="6dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/soginch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/saqlanganlar"
+        app:layout_constraintStart_toStartOf="@id/saqlanganlar"
+        app:layout_constraintBottom_toTopOf="@id/ota_ona"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintWidth_percent="0.38"
+        app:layout_constraintHeight_percent="0.13" >
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bird"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sog'inch armon"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="6dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ota_ona"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/sevgi"
+        app:layout_constraintStart_toStartOf="@id/saqlanganlar"
+        app:layout_constraintBottom_toTopOf="@id/hazil"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintWidth_percent="0.38"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintVertical_bias="0.2" >
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/parents"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ota-ona haqida"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="6dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/hazil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ota_ona"
+        app:layout_constraintStart_toStartOf="@id/saqlanganlar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintWidth_percent="0.38"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintVertical_bias="0.2" >
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/jester"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hazil sherlar"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="6dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="@id/yangilar"
+        app:layout_constraintTop_toBottomOf="@id/yangilar"
+        app:layout_constraintStart_toStartOf="@id/yangilar"
+        android:layout_marginStart="20dp"
+        android:text="NEW"
+        android:textColor="@color/white"
+        android:background="@drawable/back"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
